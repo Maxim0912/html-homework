@@ -1,0 +1,46 @@
+<!doctype html>  
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Опрос</title>
+</head>
+<body>
+
+    <section>
+        <h2>Моя первая встреча с инопланетянами</h2>
+        <form enctype="multipart/form-data" action="#" method="POST">
+            <div>
+                <label>Опишите Вашу первую встречу с инопланетянами?</label>
+                <textarea name="first_meet"></textarea>
+            </div>
+            <div>
+                <label for="picture">Загрузите памятную фотографию с инопланетянами</label>
+                <input id="picture" type="file" name="picture" accept="image/*">
+            </div>
+            <div> 
+                <span>Какого пола был инопланетянин?</span>
+                <label><input type="radio" name="sex" value="Male">Мужчина</label>
+                <label><input type="radio" name="sex" value="Female">Женщина</label>
+                <label><input type="radio" name="sex" value="Marilyn_Manson">Затрудняюсь ответить (Мэрилин Мэнсон)</label>
+            </div>
+            <label for="info">Кому Вы сообщили о встрече и инопланетянами?</label>
+                <select id="info" name="info" multiple>
+                    <option value="newspsper">обзвонил все газеты</option>
+                    <option value="police">позвонил в полицию, а, заодно в скорую, и пожарным</option>
+                    <option value="center">сообщил в Центр</option>
+                    <option value="doctor">лучащему врачу</option>
+                </select>
+            <div> 
+                <span>Вы проходите этот тест, потому,что:</span>
+                <label><input type="checkbox" value="ready" name="reason[]">я всегда готов к встрече с братьями по разуму</label>
+                <label><input type="checkbox" value="hobby" name="reason[]">я люблю проходить всякие глупые тесты</label>
+                <label><input type="checkbox" value="hw" name="reason[]">это мое задание</label>
+                <label><input type="checkbox" value="teacher" name="reason[]">я учитель и проверяю домашнее задание</label>
+            </div>
+        </form>
+    </section>
+    <!-- дома сделать две формы (маленькую и большую) 
+    привязать кнопку к форме вне формы-->
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>  
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Простая форма регистрации</title>
+</head>
+<body>
+
+    <section>
+        <h2>Регистрация</h2>
+        <form enctype="multipart/form-data" action="#" method="POST" id="registration_form">
+            <div>
+                <input minlength="3" maxlength="12" placeholder="Введите Ваше имя" type="text" name="name">
+            </div>
+            <div>
+                <input type="email" placeholder="Введите E-mail" name="email">
+            </div>
+            <div>
+                <input type="password" placeholder="Введите пароль" name="password">
+            </div>
+            <div>
+                <label for="notification">Как часто Вы хотите получать от нас уведомления?</label>
+                <select id="notification" name="notification">
+                    <option value="dauly">Раз в день</option>
+                    <option value="hourly">Раз в час</option>
+                    <option value="minutely">Ежеминутно</option>
+                </select>
+            </div>
+        </form>
+        <button type="submit" form="registration_form">Отправить форму</button>
+        <h3>
+            <a href="survey.html">Хочу пройти полный опрос</a>
+        </h3> 
+    </section>
+
+</body>
+</html>
